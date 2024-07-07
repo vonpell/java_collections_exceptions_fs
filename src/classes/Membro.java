@@ -1,4 +1,4 @@
-package trabalho_colecoes_afonso_02_07_24;
+package classes;
 
 import java.io.Serializable;
 import java.util.Objects;

@@ -1,6 +1,6 @@
 package teste;
 
-import trabalho_colecoes_afonso_02_07_24.*;
+import classes.*;
 
 import java.util.ArrayList;
 import java.util.TreeSet;

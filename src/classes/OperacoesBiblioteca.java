@@ -1,4 +1,4 @@
-package trabalho_colecoes_afonso_02_07_24;
+package classes;
 
 public interface OperacoesBiblioteca<T1, T2> {
 
