@@ -1,0 +1,6 @@
+Membro: Adao, matrícula: 1002, situação: CANCELADO
+Membro: Afonso, matrícula: 1001, situação: MATRICULADO
+Membro: Ivo, matrícula: 1003, situação: CANCELADO
+Membro: Silvia, matrícula: 1000, situação: CANCELADO
+Membro: Simaria, matrícula: 1005, situação: MATRICULADO
+Membro: Simone, matrícula: 1004, situação: MATRICULADO
