@@ -36,7 +36,6 @@ public class Teste {
         System.out.println(DaMeiaNoite.pesquisarMembro(MembroNaoExiste2));
         System.out.println();
 
-
         arquivoObjetos.gravaMembros(DaMeiaNoite.getListaMembros(), "Lista de Membros.txt");
         arquivoObjetos.gravarLivro(DaMeiaNoite.getListaLivros(), "Lista de Livros.txt");
         arquivoObjetos.lerArquivo("Lista de Membros.txt");
