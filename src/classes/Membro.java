@@ -3,6 +3,8 @@ package classes;
 import java.io.Serializable;
 import java.util.Objects;
 
+import static java.lang.Boolean.parseBoolean;
+
 public class Membro implements Comparable<Membro>, Serializable {
     // implementei o Serializable, mas não utilizei InputStream e OutputStream
     private String nome;
@@ -66,6 +68,11 @@ public class Membro implements Comparable<Membro>, Serializable {
 
     @Override
     public int compareTo(Membro o) {
+        if (this.nome == null) {
+            return -1;
+        } else if (o.getNome() == null) {
+            return 1;
+        }
         return this.nome.compareTo(o.getNome());
     }
 

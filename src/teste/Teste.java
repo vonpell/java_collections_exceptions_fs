@@ -11,12 +11,13 @@ public class Teste {
         ArquivoObjetos<Membro> arquivoObjetos = new ArquivoObjetos<>();
 
         Biblioteca DaMeiaNoite = new Biblioteca(new ArrayList<>(), new TreeSet<>());
-        Livro DefeitoDeCor = new Livro("Defeito de Cor", "Ana Maria Gonçalves", "9788501011756");
+        Livro DefeitoDeCor = new Livro("Defeito de Cor", "Ana Maria Goncalves", "9788501011756");
         Livro LivroNaoExiste = new Livro();
         Membro Silvia = new Membro("Silvia", "1000", SituacaoEnum.CANCELADO);
         Membro MembroNaoExiste = new Membro();
+        Membro MembroNaoExiste2 = new Membro("Membro Não Existe", "1006", SituacaoEnum.CANCELADO);
 
-        DaMeiaNoite.cadastrarLivro(new Livro("Continente", "Érico Veríssimo", "9788525000705"));
+        DaMeiaNoite.cadastrarLivro(new Livro("Continente", "Erico Verissimo", "9788525000705"));
         DaMeiaNoite.cadastrarLivro(new Livro("O Olho do Mundo", "Robert Jordan", "9788580573626"));
         DaMeiaNoite.cadastrarLivro(DefeitoDeCor);
         DaMeiaNoite.cadastrarMembro(Silvia);
@@ -32,10 +33,14 @@ public class Teste {
         System.out.println(DaMeiaNoite.pesquisarLivro(LivroNaoExiste));
         System.out.println(DaMeiaNoite.pesquisarMembro(Silvia));
         System.out.println(DaMeiaNoite.pesquisarMembro(MembroNaoExiste));
+        System.out.println(DaMeiaNoite.pesquisarMembro(MembroNaoExiste2));
+        System.out.println();
+
 
         arquivoObjetos.gravaMembros(DaMeiaNoite.getListaMembros(), "Lista de Membros.txt");
         arquivoObjetos.gravarLivro(DaMeiaNoite.getListaLivros(), "Lista de Livros.txt");
         arquivoObjetos.lerArquivo("Lista de Membros.txt");
+        System.out.println();
         arquivoObjetos.lerArquivo("Lista de Livros.txt");
 
     }
