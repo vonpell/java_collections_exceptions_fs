@@ -15,7 +15,7 @@ public class Teste {
         Livro LivroNaoExiste = new Livro();
         Membro Silvia = new Membro("Silvia", "1000", SituacaoEnum.CANCELADO);
         Membro MembroNaoExiste = new Membro();
-        Membro MembroNaoExiste2 = new Membro("Membro Não Existe", "1006", SituacaoEnum.CANCELADO);
+        Membro MembroNaoExiste2 = new Membro("Membro Não Existe", "-", SituacaoEnum.CANCELADO);
 
         DaMeiaNoite.cadastrarLivro(new Livro("Continente", "Erico Verissimo", "9788525000705"));
         DaMeiaNoite.cadastrarLivro(new Livro("O Olho do Mundo", "Robert Jordan", "9788580573626"));
@@ -37,10 +37,10 @@ public class Teste {
         System.out.println();
 
         arquivoObjetos.gravaMembros(DaMeiaNoite.getListaMembros(), "Lista de Membros.txt");
-        arquivoObjetos.gravarLivro(DaMeiaNoite.getListaLivros(), "Lista de Livros.txt");
-        arquivoObjetos.lerArquivo("Lista de Membros.txt");
+        arquivoObjetos.gravaLivros(DaMeiaNoite.getListaLivros(), "Lista de Livros.txt");
+        arquivoObjetos.leArquivo("Lista de Membros.txt");
         System.out.println();
-        arquivoObjetos.lerArquivo("Lista de Livros.txt");
+        arquivoObjetos.leArquivo("Lista de Livros.txt");
 
     }
 }

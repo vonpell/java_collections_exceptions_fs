@@ -25,7 +25,7 @@ public class ArquivoObjetos<T> {
         }
     }
 
-    public void gravarLivro(ArrayList<Livro> listaLivros, String nomeArqLivro) {
+    public void gravaLivros(ArrayList<Livro> listaLivros, String nomeArqLivro) {
         File arquivo = new File(nomeArqLivro);
         try {
             FileWriter fw = new FileWriter(arquivo);
@@ -42,7 +42,7 @@ public class ArquivoObjetos<T> {
         }
     }
 
-    public void lerArquivo(String nomeArquivo) {
+    public void leArquivo(String nomeArquivo) {
         try {
             FileReader fr = new FileReader(nomeArquivo);
             BufferedReader leitura = new BufferedReader(fr);
