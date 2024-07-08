@@ -32,11 +32,15 @@ public class Biblioteca implements OperacoesBiblioteca<Membro, Livro> {
     }
 
     public void cadastrarMembro(Membro membro) {
-        listaMembros.add(membro);
+        if (membro.getMatricula() == null || membro.getNome() == null || membro.getSituacao() == null) {
+            System.out.println("Membro com informacoes faltantes nao pode ser cadastrado.");
+        } else listaMembros.add(membro);
     }
 
     public void cadastrarLivro(Livro livro) {
-        listaLivros.add(livro);
+        if (livro.getIsbn() == null || livro.getTitulo() == null || livro.getAutor() == null) {
+            System.out.println("Livro com informacoes faltantes nao pode ser cadastrado.");
+        } else listaLivros.add(livro);
     }
 
     public String listarTodosMembros() {
